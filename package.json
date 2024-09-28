@@ -1,22 +1,16 @@
 {
   "name": "rate-limiter-advance",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "",
-  "main": "index.js",
+  "main": "dist/rate-limiter.min.js",
   "scripts": {
     "build": "webpack",
-    "main": "dist/rate-limiter.min.js",
-    "test": "jest"
+    "main": "dist/rate-limiter.min.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "kumarparas7477",
   "license": "ISC",
   "dependencies": {
-    "jest": "^29.7.0"
-  },
-  "devDependencies": {
-    "terser-webpack-plugin": "^5.3.10",
-    "webpack": "^5.95.0",
-    "webpack-cli": "^5.1.4"
+    "rate-limiter-advance": "^1.0.4"
   }
 }
