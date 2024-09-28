@@ -14,6 +14,6 @@ A flexible, lightweight rate limiting utility designed to control the number of 
 Install via NPM:
 
 ```bash
-npm install @paras/rate-limiter
+npm install rate-limiter-advance
 
-yarn add @paras/rate-limiter
+yarn add rate-limiter-advance
