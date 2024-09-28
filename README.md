@@ -13,7 +13,30 @@ A flexible, lightweight rate limiting utility designed to control the number of 
 
 Install via NPM:
 
-```bash
 npm install rate-limiter-advance
 
 yarn add rate-limiter-advance
+
+## Example
+
+const RateLimiter = require('rate-limiter');
+
+const rateLimiter = new RateLimiter();
+
+// Configure rate limit: Allow 5 calls every 60 seconds
+rateLimiter.addConfig('getUserData', 5, 60);
+
+const getUserData = () => {
+    console.log('API call to get user data executed');
+};
+
+const callApi = () => {
+    rateLimiter.execute('getUserData', getUserData);
+};
+
+// Simulate multiple API calls
+for (let i = 0; i < 10; i++) {
+    callApi();
+}
+
+```bash
